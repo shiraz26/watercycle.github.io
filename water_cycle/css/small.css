@@ -14,18 +14,11 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-
     padding: .5rem 2%;
     background-color: #ddd;
 }
-
-header img {float:left; margin-right: 10px; width: 50px;}
-header h1 {margin: 0; font-size: 1.3rem ;}
-header h2 {margin: 0; font-weight: normal; }
-header figure.logo{
-    float: left;
-    margin: 0 2% 0 0 ;
-}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -36,19 +29,24 @@ nav ul {
     padding: 0;
     margin: 0;
 }
-
+nav ul li {
+    float: left;
+    width: 25%;
+}
 nav ul li a {
     display: block;
+    background-color: #444;
     color: #eee;
+    border-left: 1px solid #777;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
     text-align: center;
 }
-
+nav ul li:first-child a {border-left: none;}
 
 nav ul li a:hover {
-    background-color: #aaa;
+    background-color: #eee;
     color: #333;
 }
 nav ul li.active a {
@@ -60,14 +58,6 @@ main {
     padding: 0 2%;
     min-height: 10rem;
 }
-main figure.myphoto {
-    width: 50%;
-    margin: 0 0 0 2% ;
-    float: right;
-}
-main figure.myphoto img {width: 100%;}
-main figure.myphoto figcaption { text-align: center; font-size: .75rem;}
-
 
 
 /*----------- FOOTER --------------*/
@@ -77,22 +67,6 @@ footer {
     text-align: center;
 }
 
-div.social {
-    background-color: black;
-    display: flex;
-    padding: 1rem 0 ;
-
-}
-div.social a {
-    flex-basis: 25%;
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-
-}
-div.social a:hover{color: orange;
-
-}
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
